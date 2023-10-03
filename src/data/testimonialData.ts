@@ -5,7 +5,7 @@ export const testimonialData = [
     handle: "@omoniyiux",
     name: "Promise Olaifa",
     social: "/images/twitter.svg",
-    text: "Absolutely amazing! This product exceeded my expectations. I can&apos;t imagine my life without it now",
+    text: "Absolutely amazing! This product exceeded my expectations. I can't imagine my life without it now",
   },
   {
     id: 1,
@@ -13,7 +13,7 @@ export const testimonialData = [
     handle: "@omoniyiux",
     name: "Promise Olaifa",
     social: "/images/facebook.svg",
-    text: "Absolutely amazing! This product exceeded my expectations. I can&apos;t imagine my life without it now",
+    text: "Absolutely amazing! This product exceeded my expectations. I can't imagine my life without it now",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const testimonialData = [
     handle: "@omoniyiux",
     name: "Promise Olaifa",
     social: "/images/instagram.svg",
-    text: "Absolutely amazing! This product exceeded my expectations. I can&apos;t imagine my life without it now",
+    text: "Absolutely amazing! This product exceeded my expectations. I can't imagine my life without it now",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const testimonialData = [
     handle: "@omoniyiux",
     name: "Promise Olaifa",
     social: "/images/facebook.svg",
-    text: "Absolutely amazing! This product exceeded my expectations. I can&apos;t imagine my life without it now",
+    text: "Absolutely amazing! This product exceeded my expectations. I can't imagine my life without it now",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const testimonialData = [
     handle: "@omoniyiux",
     name: "Promise Olaifa",
     social: "/images/instagram.svg",
-    text: "Absolutely amazing! This product exceeded my expectations. I can&apos;t imagine my life without it now",
+    text: "Absolutely amazing! This product exceeded my expectations. I can't imagine my life without it now",
   },
   {
     id: 5,
@@ -45,6 +45,6 @@ export const testimonialData = [
     handle: "@omoniyiux",
     name: "Promise Olaifa",
     social: "/images/twitter.svg",
-    text: "Absolutely amazing! This product exceeded my expectations. I can&apos;t imagine my life without it now",
+    text: "Absolutely amazing! This product exceeded my expectations. I can't imagine my life without it now",
   },
 ];
