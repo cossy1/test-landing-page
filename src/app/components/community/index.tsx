@@ -9,7 +9,7 @@ import {
 import CommunityCard from "../communityCard";
 import { communityPackage } from "../../../data/communityPackage";
 
-const StyledAdvert = styled.div`
+const StyledCommunity = styled.div`
   padding: 32px 40px;
   display: flex;
   flex-direction: column;
@@ -77,12 +77,6 @@ const StyledTop = styled.div`
     }
   }
 
-  .form-check-input:checked,
-  .form-check-input:checked {
-    background-color: ${({ theme }) => theme.colors.primaryGreen};
-    border-color: transparent;
-  }
-
   ${mediaBreakpointDown(
     BREAKPOINTS.sm,
     css`
@@ -100,7 +94,7 @@ const StyledTop = styled.div`
 
 const Community = () => {
   return (
-    <StyledAdvert>
+    <StyledCommunity>
       <StyledTop>
         <div>Ready to Join our Community?</div>
         <div>Choose the package that suit you</div>
@@ -128,7 +122,7 @@ const Community = () => {
           );
         })}
       </Row>
-    </StyledAdvert>
+    </StyledCommunity>
   );
 };
 
