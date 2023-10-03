@@ -8,6 +8,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     background: ${Colors.white};
+
+    .form-check-input:checked,
+  .form-check-input:checked {
+    background-color: ${Colors.primaryGreen};
+    border-color: transparent;
+  }
   }
 
   a {
