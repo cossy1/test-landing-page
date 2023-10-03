@@ -1,10 +1,14 @@
 import React from "react";
-import styled from "styled-components";
-import Fonts from "../../../../themes/fonts";
+import styled, { css } from "styled-components";
+import Fonts from "../../../../../themes/fonts";
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 import { members } from "@/data/members";
-import Image from 'next/image';
+import Image from "next/image";
+import {
+  BREAKPOINTS,
+  mediaBreakpointDown,
+} from "../../../../../themes/breakpoints";
 
 const StyledMembers = styled.div`
   display: flex;
@@ -16,6 +20,18 @@ const StyledMembers = styled.div`
     line-height: 24px;
     color: ${({ theme }) => theme.colors.dark};
   }
+
+  ${mediaBreakpointDown(
+    BREAKPOINTS.md,
+    css`
+      .top {
+        font-size: 10px;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 12px;
+      }
+    `
+  )}
 `;
 
 const Members: React.FC = () => {
@@ -38,7 +54,13 @@ const Members: React.FC = () => {
       <Container fluid className="mt-3">
         <Slider {...settings}>
           {members.map((member, index: number) => (
-            <Image key={index} src={member.image} alt="icon" width={96.14} height={48} />
+            <Image
+              key={index}
+              src={member.image}
+              alt="icon"
+              width={96.14}
+              height={48}
+            />
           ))}
         </Slider>
       </Container>

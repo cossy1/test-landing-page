@@ -1,10 +1,10 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Fonts from "../../../../themes/fonts";
+import Fonts from "../../../../../themes/fonts";
 import {
   BREAKPOINTS,
   mediaBreakpointDown,
-} from "../../../../themes/breakpoints";
+} from "../../../../../themes/breakpoints";
 import { Row, Col } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import { faqData } from "@/data/faqData";
@@ -13,6 +13,13 @@ const StyledFaq = styled.div`
   padding: 32px 40px;
   display: flex;
   flex-direction: column;
+
+  ${mediaBreakpointDown(
+    BREAKPOINTS.sm,
+    css`
+      padding: 10px;
+    `
+  )}
 `;
 
 const StyledTop = styled.div`
@@ -41,11 +48,11 @@ const StyledTop = styled.div`
     BREAKPOINTS.sm,
     css`
       div {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 30px;
       }
       div:nth-child(2) {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 28.8px;
       }
     `

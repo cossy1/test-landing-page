@@ -1,12 +1,12 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Fonts from "../../../../themes/fonts";
+import Fonts from "../../../../../themes/fonts";
 import Image from "next/image";
-import AppButton from "../AppButton";
+import AppButton from "../../AppButton";
 import {
   BREAKPOINTS,
   mediaBreakpointDown,
-} from "../../../../themes/breakpoints";
+} from "../../../../../themes/breakpoints";
 import useWindowSize from "@/hooks/useWindowSize";
 
 const StyledHero = styled.div`
@@ -20,6 +20,7 @@ const StyledHero = styled.div`
     BREAKPOINTS.lg,
     css`
       flex-direction: column;
+      padding: 10px;
     `
   )}
 `;

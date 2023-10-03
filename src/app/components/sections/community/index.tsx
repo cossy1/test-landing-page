@@ -1,13 +1,13 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Fonts from "../../../../themes/fonts";
+import Fonts from "../../../../../themes/fonts";
 import { Col, Form, Row } from "react-bootstrap";
 import {
   BREAKPOINTS,
   mediaBreakpointDown,
-} from "../../../../themes/breakpoints";
-import CommunityCard from "../communityCard";
-import { communityPackage } from "../../../data/communityPackage";
+} from "../../../../../themes/breakpoints";
+import CommunityCard from "../../communityCard";
+import { communityPackage } from "../../../../data/communityPackage";
 
 const StyledCommunity = styled.div`
   padding: 32px 40px;
@@ -26,7 +26,7 @@ const StyledCommunity = styled.div`
   ${mediaBreakpointDown(
     BREAKPOINTS.sm,
     css`
-      padding: 32px 10px;
+      padding: 10px;
 
       .large {
         img {
@@ -87,6 +87,12 @@ const StyledTop = styled.div`
       div:nth-child(2) {
         font-size: 16px;
         line-height: 28.8px;
+      }
+
+      .stack {
+        div {
+          font-size: 12px;
+        }
       }
     `
   )}

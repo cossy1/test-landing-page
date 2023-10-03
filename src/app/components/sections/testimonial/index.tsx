@@ -1,18 +1,25 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Fonts from "../../../../themes/fonts";
+import Fonts from "../../../../../themes/fonts";
 import { Col, Form, Row } from "react-bootstrap";
 import {
   BREAKPOINTS,
   mediaBreakpointDown,
-} from "../../../../themes/breakpoints";
-import TestimonialCard from "../TestimonialCard";
+} from "../../../../../themes/breakpoints";
+import TestimonialCard from "../../TestimonialCard";
 import { testimonialData } from "@/data/testimonialData";
 
 const StyledTestimonial = styled.div`
   padding: 32px 40px;
   display: flex;
   flex-direction: column;
+
+  ${mediaBreakpointDown(
+    BREAKPOINTS.sm,
+    css`
+      padding: 10px;
+    `
+  )}
 `;
 
 const StyledTop = styled.div`
@@ -41,11 +48,11 @@ const StyledTop = styled.div`
     BREAKPOINTS.sm,
     css`
       div {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 30px;
       }
       div:nth-child(2) {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 28.8px;
       }
     `
@@ -54,7 +61,7 @@ const StyledTop = styled.div`
 
 const Testimonial = () => {
   return (
-    <StyledTestimonial>
+    <StyledTestimonial className="mt-4">
       <StyledTop>
         <div>What People say About Us</div>
         <div>
@@ -68,7 +75,7 @@ const Testimonial = () => {
           const { id, text, image, social, name, handle } = testimonial;
 
           return (
-            <Col key={id}  lg={4} xs={12}>
+            <Col key={id} lg={4} xs={12}>
               <TestimonialCard
                 text={text}
                 image={image}

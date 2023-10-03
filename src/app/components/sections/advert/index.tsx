@@ -1,13 +1,13 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Fonts from "../../../../themes/fonts";
-import AdvertCard from "../AdvertCard";
+import Fonts from "../../../../../themes/fonts";
+import AdvertCard from "../../AdvertCard";
 import { adverts } from "@/data/advert";
 import { Col, Row } from "react-bootstrap";
 import {
   BREAKPOINTS,
   mediaBreakpointDown,
-} from "../../../../themes/breakpoints";
+} from "../../../../../themes/breakpoints";
 
 const StyledAdvert = styled.div`
   padding: 32px 40px;
@@ -26,7 +26,7 @@ const StyledAdvert = styled.div`
   ${mediaBreakpointDown(
     BREAKPOINTS.sm,
     css`
-      padding: 32px 10px;
+      padding: 10px;
 
       .large {
         img {
@@ -68,7 +68,6 @@ const StyledTop = styled.div`
     text-align: center;
     max-width: 490px;
     color: ${({ theme }) => theme.colors.dark};
-
   }
 
   ${mediaBreakpointDown(
