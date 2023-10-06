@@ -1,10 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Fonts from "../../../../themes/fonts";
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 import { members } from "@/data/members";
 import Image from 'next/image';
+import { BREAKPOINTS, mediaBreakpointDown } from "../../../../themes/breakpoints";
 
 const StyledMembers = styled.div`
   display: flex;
@@ -16,6 +17,16 @@ const StyledMembers = styled.div`
     line-height: 24px;
     color: ${({ theme }) => theme.colors.dark};
   }
+
+  ${mediaBreakpointDown(
+    BREAKPOINTS.sm,
+    css`
+     .top{
+      padding: 0 20px;
+      text-align: center;
+     }
+    `
+  )}
 `;
 
 const Members: React.FC = () => {
